@@ -3,7 +3,11 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" charset="UTF-8" />
   <link href="CV.css" rel="stylesheet" media="all" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="import/css/progress-wizard.min.css" rel="stylesheet">
+  <link href="import/css/flipcard.css" rel="stylesheet">
   <title>CV de Jeffen Faÿ</title>
 </head>
 <body>
@@ -12,115 +16,292 @@
     <h1>CURICULUM VITAE</h1>
   </div>
   <!-- Menu central -->
-  <div class="wrapper">
-    <!-- PRESENTATION -->
-    <div class="tab blue">
-      <input id="tabPres" type="radio" name="tabs" />
-      <label for="tabPres">Présentation</label>
-      <!-- Contenu du menu -->
-      <div class="tabContent">
-        <!-- Photo de profil -->
-        <div id="IDPic">
-          <img src="myFace.jpg" />
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingPres">
+        <h2 class="mb-0">
+          <a class="btn btn-link" data-toggle="collapse" data-target="#collapsePres" aria-expanded="true" aria-controls="collapsePres">PRESENTATION</a>
+        </h2>
+      </div>
+      <div id="collapsePres" class="collapse show" aria-labelledby="headingPres" data-parent="#accordion">
+        <div class="card-body">
+          <!-- Carte de présentation -->
+          <div class="col-xs-12 col-sm-6 col-md-3 mx-auto">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img id="myFace" class="img-fluid" src="img/myFace.jpg" alt="Photo d'identité" />
+                      <h2 class="card-title">Jeffen FAŸ</h2>
+                      <p class="card-text">Informations</p>
+                      <img class="img-fluid" src="img/plus.svg" alt="plus" style="width:15%" />
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Jeffen FAŸ</h4>
+                      <p class="card-text">
+                        <div>191, rue de la Vallée 76600 LE HAVRE</div>
+                        <div><a href="mailto:jeffen.fay@gmail.com">jeffen.fay@gmail.com</a></div>
+                        <div>Né le 18 décembre 1985</div>
+                        <div>Célibataire sans enfants</div>
+                        <div>Permis B</div></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Rajouter SEPARATEUR entre #IDPic et #bio + couleur background #bio !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-        <div id="bio">
-          <p>FAŸ</p>
-          <p>Jeffen</p>
-          <p>191, rue de la Vallée 76600 LE HAVRE</p>
-          <p><a href="mailto:jeffen.fay@gmail.com">jeffen.fay@gmail.com</a></p>
-          <p>Né le 18 décembre 1985</p>
-          <p>Célibataire sans enfants</p>
-          <p>Permis B</p>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingCpt">
+          <h2 class="mb-0">
+            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCpt" aria-expanded="false" aria-controls="collapseCpt">COMPETENCES</a>
+          </h2>
+        </div>
+        <div id="collapseCpt" class="collapse col-xs-12 col-sm-6 col-md-3 mx-auto" aria-labelledby="headingCpt" data-parent="#accordion">
+          <div class="card-body">
+            <p>Html 5</p>
+            <ul class="progress-indicator custom-complex">
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+            </ul>
+            <p>Javascript</p>
+            <ul class="progress-indicator custom-complex">
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+            </ul>
+            <p>Bootstrap 4</p>
+            <ul class="progress-indicator custom-complex">
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+            </ul>
+            <p>SQL</p>
+            <ul class="progress-indicator custom-complex">
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+            </ul>
+            <p>JAVA</p>
+            <ul class="progress-indicator custom-complex">
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+            </ul>
+            <p>Toolbook</p>
+            <ul class="progress-indicator custom-complex">
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+            </ul>
+            <p>Action Script 3</p>
+            <ul class="progress-indicator custom-complex">
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+            </ul>
+            <p>Français</p>
+            <ul class="progress-indicator custom-complex">
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+            </ul>
+            <p>Anglais</p>
+            <ul class="progress-indicator custom-complex">
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li class="completed">
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+              <li>
+                <span class="bubble"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingForm">
+          <h2 class="mb-0">
+            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseForm" aria-expanded="false" aria-controls="collapseForm">FORMATIONS</a>
+          </h2>
+        </div>
+        <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordion">
+          <div class="card-body">
+            <ul>
+              <li>
+                <p><strong>13 février 2012 - 17 février 2012</strong></p>
+                <p><strong>Stage Adobe Flash</strong> (développement informatique)</p>
+                <p>Perfectionnement</p>
+              </li>
+              <li>
+                <p><strong>06 juin 2009</strong></p>
+                <p><strong>Diplôme de Compétences en Langue</strong></p>
+                <p>Anglais (degré 3)</p>
+              </li>
+              <li>
+                <p><strong>18 mai 2005 - 3 septembre 2006</strong></p>
+                <p><strong>BAFA</strong> (Brevet d'Aptitude aux Fonctions d'Animateur)</p>
+              </li>
+              <li>
+                <p><strong>1er septembre 2004 - 4 juillet 2005</strong></p>
+                <p><strong>Baccalauréat scientifique</strong> (option Sciences de l'Ingénieur)</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingExpP">
+          <h2 class="mb-0">
+            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseExpP" aria-expanded="false" aria-controls="collapseExpP">EXPERIENCE PROFESSIONNELLE</a>
+          </h2>
+        </div>
+        <div id="collapseExpP" class="collapse" aria-labelledby="headingExpP" data-parent="#accordion">
+          <div class="card-body">
+            <ul>
+              <li>
+                <p><strong>1er mars 2007 - 31 août 2014</strong></p>
+                <p><strong>Développeur / Militaire</strong></p>
+                <p>Développeur informatique pour une plateforme Militaire (domaine militaire) d'Enseignement Assisté par Ordinateur.</p>
+                <p>Militaire : formation de chef de groupe.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingContact">
+          <h2 class="mb-0">
+            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
+              CONTACT
+            </a>
+          </h2>
+        </div>
+        <div id="collapseContact" class="collapse" aria-labelledby="headingContact" data-parent="#accordion">
+          <div class="card-body">
+            <div>Télécharger CV</div>
+            <div>rézo sociaux</div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- COMPETENCES -->
-    <div class="tab blue">
-      <input id="tabCpt" type="radio" name="tabs" />
-      <label for="tabCpt">Compétences</label>
-      <!-- Contenu du menu -->
-      <div class="tabContent">
-        <!-- Rajouter les BARRES DE PROGRESSIONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-        <p>Html 5</p>
-        <p>CSS 3</p>
-        <p>Javascript</p>
-        <p>Bootstrap 4</p>
-        <p>SQL</p>
-        <p>JAVA</p>
-        <p>Toolbook</p>
-        <p>Action Script 3</p>
-        <p>Français</p>
-        <p>Anglais</p>
-      </div>
-    </div>
-    <!-- FORMATIONS -->
-    <div class="tab blue">
-      <input id="tabForm" type="radio" name="tabs" />
-      <label for="tabForm">Formations</label>
-      <!-- Contenu du menu -->
-      <div class="tabContent">
-        <ul>
-          <li>
-            <p><strong>13 février 2012 - 17 février 2012</strong></p>
-            <p><strong>Stage Adobe Flash</strong> (développement informatique)</p>
-            <p>Perfectionnement</p>
-          </li>
-          <li>
-            <p><strong>06 juin 2009</strong></p>
-            <p><strong>Diplôme de Compétences en Langue</strong></p>
-            <p>Anglais (degré 3)</p>
-          </li>
-          <li>
-            <p><strong>18 mai 2005 - 3 septembre 2006</strong></p>
-            <p><strong>BAFA</strong> (Brevet d'Aptitude aux Fonctions d'Animateur)</p>
-          </li>
-          <li>
-            <p><strong>1er septembre 2004 - 4 juillet 2005</strong></p>
-            <p><strong>Baccalauréat scientifique</strong> (option Sciences de l'Ingénieur)</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- EXPERIENCE PROFESSIONNELLE -->
-    <div class="tab blue">
-      <input id="tabExpP" type="radio" name="tabs" />
-      <label for="tabExpP">Expérience professionnelle</label>
-      <!-- Contenu du menu -->
-      <div class="tabContent">
-        <ul>
-          <li>
-            <p><strong>1er mars 2007 - 31 août 2014</strong></p>
-            <p><strong>Développeur / Militaire</strong></p>
-            <p>Développeur informatique pour une plateforme Militaire (domaine militaire) d'Enseignement Assisté par Ordinateur.</p>
-            <p>Militaire : formation de chef de groupe.</p>* {
-  box-sizing: border-box;
-}
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- CONTACT -->
-    <div class="tab blue">
-      <input id="tabCont" type="radio" name="tabs" />
-      <label for="tabCont">Contact</label>
-      <!-- Contenu du menu -->
-      <div class="tabContent">
-        <!-- Pour exemple à REMPLACER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-        <p>Destinataire : Jeffen FAŸ</p>
-        <label for="mail">Adresse e-mail :</label>
-        <input type="email" name="mail" id="mail" placeholder="Votre adresse e-mail" />
-        <textarea></textarea>
-        <input type="submit" value="Envoyer" />
-      </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-<footer>
-  <div>Télécharger CV</div>
-  <div>rézo sociaux</div>
-</footer>
-</html>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  <footer>
+    <p><strong>© Tous droits réservés.</srong></p>
+  </footer>
+  </html>

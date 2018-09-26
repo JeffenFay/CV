@@ -1,3 +1,4 @@
+
 /* Box-sizing reset methods */
 html {
   -webkit-box-sizing: border-box;
@@ -9,109 +10,26 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
-/* Title */
-#band{
-  background-color: #e5e5e5;
-  padding: 15px;
-  text-align: center;
+html {
+  background-color: #26408b;
 }
-/* Présentation : Display ID */
-#bio, img {
-  float:left;
-}
-#IDPic{
-  /*Les deux lignes suivantes redimensionnent
-  l'image en gardant les proportions*/
-  max-width:10vw;
-  height:auto;
-}
-/* Main Menu */
-body {
-  background: #ecf0f1;
-}
-h1 {
+footer, #band{
+  background-color: #26408b;
+  color: #181f1c;
+  padding: 1.5rem;
   text-align: center;
 }
 
-.wrapper {
-  width: 100%;
-  padding: 0 1em;
-}
-/* Accordeon styles */
-.tab {
-  position: relative;
-  margin-bottom: 1px;
-  width: 100%;
-  color: #ffffff;
-  overflow: hidden;
-}
-.tab input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-.tab label {
-  position: relative;
-  display: block;
-  padding: 0 0 0 1em;
-  /*background: #16a085;*/
-  font-weight: bold;
-  line-height: 3;
-  cursor: pointer;
-}
-.blue label {
-  background: #2980b9;
-}
-.tabContent {
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height .35s;
-  -o-transition: max-height .35s;
-  transition: max-height .35s;
-  background: #3498db;
-}
-.tabContent p {
-  margin: 1em;
-}
-/* :checked*/
-.tab input:checked ~ .tabContent {
-  max-height: 200vh;
-}
-/* Icon */
-.tab label::after {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  width: 3em;
-  height: 3em;
-  line-height: 3;
-  text-align: center;
-  -webkit-transition: all .35s;
-  -o-transition: all .35s;
-  transition: all .35s;
+.card .card-header {
+    border: none;
+    background-color : #2e933c;
 }
 
-.tab input[type=radio] + label::after {
-  content: "\25BC";
-}
-.tab input[type=radio]:checked + label::after {
-  transform: rotateX(180deg);
+.card .card-header .btn {
+  color : white;
 }
 
-#mail {
-  position: absolute;
-  opacity: 1;
-  z-index: 1;
-}
-textarea {
-    height: 30vh;
-    width: 60vw;
-}
-
-footer {
-  background-color: #e5e5e5;
-  text-align: center;
-  padding: 10px;
-  margin-top: 7px;
+.card #collapseCpt {
+  max-width: 40rem;
+  
 }
