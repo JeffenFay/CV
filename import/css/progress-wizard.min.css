@@ -178,8 +178,8 @@
 	position: relative;
 	z-index: 10;
 	top: 0;
-	margin-left: 60%!important;
-	width: 45%!important;
+	margin-left: 60%;
+	width: 45%;
 	display: inline-block;
 	text-align: left;
 	line-height: 1.2em
@@ -200,9 +200,9 @@
 }
 
 .progress-indicator.stacked.nocenter .stacked-text {
-	width: auto!important;
+	width: auto;
 	display: block;
-	margin-left: 40px!important;
+	margin-left: 40px;
 }
 /* A totally custom override */
 .progress-indicator.custom-complex {

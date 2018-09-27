@@ -1,0 +1,62 @@
+html {
+  background-color: #26408b;
+}
+
+footer, #band{
+  background-color: #26408b;
+  color: #181f1c;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.card .card-header {
+    border: none;
+    background-color : #2e933c;
+}
+
+.card .card-header i {
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+.card .card-header .btn {
+  color : white;
+}
+
+#collapsePres {
+  background-color: lightgrey;
+}
+
+#collapseCpt {
+  max-width: 40rem;
+}
+
+#fa-plus-circle {
+  font-size: 2rem;
+  color: #2e933c;
+}
+
+.image-flip, .backside {
+  width: 15rem;
+}
+
+fieldset {
+  position: relative;
+  padding: 1rem;
+  border:0.2rem solid #2E933C;
+  -moz-border-radius:0.8rem;
+  -webkit-border-radius:0.8rem;
+  border-radius:0.8rem;
+}
+
+legend {
+  text-align: center;
+  color: #2E933C;
+}

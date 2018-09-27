@@ -1,3 +1,17 @@
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
 .image-flip:hover .backside,
 .image-flip.hover .backside {
     -webkit-transform: rotateY(0deg);
@@ -75,7 +89,6 @@
     min-height: 312px;
 }
 
-/*  mail */
 .backside .card a {
     font-size: 18px;
     color: #007b5e;
@@ -83,6 +96,12 @@
 
 .frontside .card .card-title,
 .backside .card .card-title {
+    color: #007b5e;
+}
+
+/* adresse mail */
+.backside .card a {
+    font-size: 18px;
     color: #007b5e;
 }
 
