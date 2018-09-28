@@ -99,13 +99,7 @@
     color: #007b5e;
 }
 
-/* adresse mail */
-.backside .card a {
-    font-size: 18px;
-    color: #007b5e;
-}
-
-.frontside .card .card-body #myFace {
+.frontside .card .card-body img {
     width: 120px;
     height: 120px;
     border-radius: 50%;

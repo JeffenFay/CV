@@ -1,33 +1,63 @@
-html {
-  background-color: #26408b;
-}
-
-footer, #band{
-  background-color: #26408b;
-  color: #181f1c;
-  padding: 1.5rem;
-  text-align: center;
-}
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+   background: #26408b url("img/background_paint.jpg") no-repeat fixed center;
 }
 
-.card .card-header {
-    border: none;
-    background-color : #2e933c;
+#logo{
+  width: 10rem;
+  padding: 2rem;
+  height:auto;
 }
 
-.card .card-header i {
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-header {
+  border: none;
+  background-color: #2e933c;
+}
+
+.card-header i {
   padding-right: 1rem;
   font-size: 1rem;
 }
 
 .card .card-header .btn {
   color : white;
+}
+
+legend {
+  text-align: center;
+  color: #2E933C;
+}
+
+.list-group > li:nth-child(1){
+  text-align: center;
+  background : #2ECC71;
+}
+.list-group > li:nth-child(2){
+  text-align: center;
+  background : #2980B9;
+}
+.list-group > li:nth-child(3){
+  text-align: center;
+  background : #E67E22;
+}
+.list-group > li:nth-child(4){
+  text-align: center;
+  background : #95A5A6;
+}
+
+#flashIcon, #UKflagIcon, #bafaIcon {
+  height: 1rem;
+  width: auto;
+  padding-right: 1rem;
+}
+
+#logo-cap {
+  padding-right: 1rem;
 }
 
 #collapsePres {
@@ -43,20 +73,21 @@ body {
   color: #2e933c;
 }
 
-.image-flip, .backside {
-  width: 15rem;
+#accordion {
+  padding: 0rem;
+}
+
+.bodyExpP {
+  background-color : #16A085;
+  padding: 3rem;
+  color: white;
 }
 
 fieldset {
   position: relative;
   padding: 1rem;
   border:0.2rem solid #2E933C;
-  -moz-border-radius:0.8rem;
-  -webkit-border-radius:0.8rem;
-  border-radius:0.8rem;
-}
-
-legend {
-  text-align: center;
-  color: #2E933C;
+  -moz-border-radius:0rem;
+  -webkit-border-radius:0rem;
+  border-radius:0rem;
 }

@@ -8,47 +8,55 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link href="import/css/progress-wizard.min.css" rel="stylesheet" media="all" type="text/css" />
   <link href="import/css/flipcard.css" rel="stylesheet" media="all" type="text/css" />
+  <link href="import/css/footer-distributed.css" rel="stylesheet" media="all" type="text/css" />
   <link href="css/cv.css" rel="stylesheet" media="all" type="text/css" />
   <title>CV de Jeffen Faÿ</title>
 </head>
 <body>
   <!-- Bandeau titre -->
   <div id="band">
-    <h1>CURICULUM VITAE</h1>
+    <img class="displayed" src="img/logo.png" alt="logo jeffen faÿ" id="logo">
   </div>
   <!-- Menu central -->
   <div id="accordion">
     <div class="card">
       <div class="card-header" id="headingPres">
-        <h2 class="mb-0">
-          <a class="btn btn-link" data-toggle="collapse" data-target="#collapsePres" aria-expanded="true" aria-controls="collapsePres"><i class="fas fa-plus"></i>PRESENTATION</a>
-        </h2>
+        <h1 class="mb-0">
+          <a class="btn btn-link" data-toggle="collapse" data-target="#collapsePres" aria-expanded="true" aria-controls="collapsePres"><i class="fas fa-plus"  id="fa-plus-menuPres"></i>PRESENTATION</a>
+        </h1>
       </div>
       <div id="collapsePres" class="collapse show" aria-labelledby="headingPres" data-parent="#accordion">
         <div class="card-body">
-          <!-- Carte de présentation -->
-          <div class="image-flip mx-auto">
-            <div class="mainflip">
-              <div class="frontside">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <img id="myFace" class="img-fluid" src="img/myFace.jpg" alt="Photo d'identité" />
-                    <h2 class="card-title">Jeffen FAŸ</h2>
-                    <p class="card-text">Informations</p>
-                    <i class="fas fa-plus-circle" id="fa-plus-circle"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="backside mx-auto">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <h4 class="card-title">Jeffen FAŸ</h4>
-                    <p class="card-text">
-                      <div>191, rue de la Vallée 76600 LE HAVRE</div>
-                      <div><a href="mailto:jeffen.fay@gmail.com">jeffen.fay@gmail.com</a></div>
-                      <div>Né le 18 décembre 1985</div>
-                      <div>Célibataire sans enfants</div>
-                      <div>Permis B</div>
+          <div class="container">
+            <div class="row">
+              <!-- Carte de présentation -->
+              <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
+                <div class="image-flip">
+                  <div class="mainflip">
+                    <div class="frontside">
+                      <div class="card">
+                        <div class="card-body text-center">
+                          <p><img id="myFace" class="img-fluid" src="img/myFace.jpg" alt="Photo d'identité" /></p>
+                          <h1 class="card-title">Jeffen FAŸ</h1>
+                          <p class="card-text">Informations</p>
+                          <i class="fas fa-plus-circle" id="fa-plus-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="backside">
+                      <div class="card">
+                        <div class="card-body text-center mt-4">
+                          <h4 class="card-title">Jeffen FAŸ</h4>
+                          <p class="card-text">
+                            <hr>
+                            <div>191, rue de la Vallée 76600 LE HAVRE</div>
+                            <div><a href="mailto:jeffen.fay@gmail.com">jeffen.fay@gmail.com</a></div>
+                            <div>Né le 18 décembre 1985</div>
+                            <div>Célibataire sans enfants</div>
+                            <div>Permis B</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -59,10 +67,10 @@
       </div>
       <div class="card">
         <div class="card-header" id="headingCpt">
-          <h2 class="mb-0">
+          <h1 class="mb-0">
             <span class="glyphicon glyphicon-plus"></span>
-            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCpt" aria-expanded="false" aria-controls="collapseCpt"><i class="fas fa-plus"></i>COMPETENCES</a>
-          </h2>
+            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCpt" aria-expanded="false" aria-controls="collapseCpt"><i class="fas fa-plus" id="fa-plus-menuCpt"></i>COMPETENCES</a>
+          </h1>
         </div>
         <div id="collapseCpt" class="collapse col-xs-12 col-sm-6 col-md-3 mx-auto" aria-labelledby="headingCpt" data-parent="#accordion">
           <div class="card-body">
@@ -110,7 +118,7 @@
                   <li class="completed">
                     <span class="bubble"></span>
                   </li>
-                  <li class="completed">
+                  <li>
                     <span class="bubble"></span>
                   </li>
                   <li>
@@ -265,30 +273,28 @@
       </div>
       <div class="card card">
         <div class="card-header" id="headingForm">
-          <h2 class="mb-0">
-            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseForm" aria-expanded="false" aria-controls="collapseForm"><i class="fas fa-plus"></i>FORMATIONS</a>
-          </h2>
+          <h1 class="mb-0">
+            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseForm" aria-expanded="false" aria-controls="collapseForm"><i class="fas fa-plus" id="fa-plus-menuF"></i>FORMATIONS</a>
+          </h1>
         </div>
         <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordion">
           <div class="card-body">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">
+              <li class="list-group-item shadow mb-2">
                 <p><strong>13 février 2012 - 17 février 2012</strong></p>
-                <p><strong>Stage Adobe Flash</strong> (développement informatique)</p>
-                <p>Perfectionnement</p>
+                <p><img id="flashIcon" class="img-fluid" src="img/adobe-flash-logo.jpg" alt="Adobe Flash" /><strong>Stage Adobe Flash</strong> (développement informatique) - Perfectionnement</p>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item shadow mb-2">
                 <p><strong>06 juin 2009</strong></p>
-                <p><strong>Diplôme de Compétences en Langue</strong></p>
-                <p>Anglais (degré 3)</p>
+                <p><img id="UKflagIcon" class="img-fluid" src="img/flag-UK.jpg" alt="Adobe Flash" /><strong>Diplôme de Compétences en Langue</strong> - Anglais (degré 3)</p>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item shadow mb-2">
                 <p><strong>18 mai 2005 - 3 septembre 2006</strong></p>
-                <p><strong>BAFA</strong> (Brevet d'Aptitude aux Fonctions d'Animateur)</p>
+                <p><img id="bafaIcon" class="img-fluid" src="img/bafa-logo.png" alt="Adobe Flash" /><strong>BAFA</strong> (Brevet d'Aptitude aux Fonctions d'Animateur)</p>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item shadow mb-2">
                 <p><strong>1er septembre 2004 - 4 juillet 2005</strong></p>
-                <p><strong>Baccalauréat scientifique</strong> (option Sciences de l'Ingénieur)</p>
+                <p><i id="logo-cap" class="fas fa-graduation-cap"></i><strong>Baccalauréat scientifique</strong> (option Sciences de l'Ingénieur)</p>
               </li>
             </ul>
           </div>
@@ -296,44 +302,37 @@
       </div>
       <div class="card">
         <div class="card-header" id="headingExpP">
-          <h2 class="mb-0 text-truncate">
-            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseExpP" aria-expanded="false" aria-controls="collapseExpP"><i class="fas fa-plus"></i>EXPERIENCE PROFESSIONNELLE</a>
-          </h2>
+          <h1 class="mb-0 text-truncate">
+            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseExpP" aria-expanded="false" aria-controls="collapseExpP"><i class="fas fa-plus" id="fa-plus-menuE"></i>EXPERIENCE PROFESSIONNELLE</a>
+          </h1>
         </div>
         <div id="collapseExpP" class="collapse" aria-labelledby="headingExpP" data-parent="#accordion">
           <div class="card-body">
-            <ul>
-              <li>
-                <p><strong>1er mars 2007 - 31 août 2014</strong></p>
-                <p><strong>Développeur / Militaire</strong></p>
-                <p>Développeur informatique pour une plateforme Militaire (domaine militaire) d'Enseignement Assisté par Ordinateur.</p>
-                <p>Militaire : formation de chef de groupe.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingContact">
-          <h2 class="mb-0">
-            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact"><i class="fas fa-plus"></i>CONTACT
-            </a>
-          </h2>
-        </div>
-        <div id="collapseContact" class="collapse" aria-labelledby="headingContact" data-parent="#accordion">
-          <div class="card-body">
-            <div>Télécharger CV</div>
-            <div>rézo sociaux</div>
+            <div class="bodyExpP">
+              <p class="text-center"><strong>1er mars 2007 - 31 août 2014</strong></p>
+              <p><strong>Développeur / Militaire</strong></p>
+              <p>Développeur informatique pour une plateforme Militaire (domaine militaire) d'Enseignement Assisté par Ordinateur.</p>
+              <p>Militaire : formation de chef de groupe.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a href="https://fr.linkedin.com/in/jeffen-fay-b7464415a"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/JeffenFay"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="#">Home</a>
+        </p>
+        <p>Curriculum Vitae &copy; 2018</p>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="javascript/behavior.js"></script>
-    <footer>
-      <p><strong>© Tous droits réservés.</strong></p>
-    </footer>
+    
   </body>
   </html>
